@@ -1,6 +1,6 @@
 
 <template>
-  <div class="container">
+  <div class="container-xl">
     <div class="row">
       <div class="col-12">
         <Navigation></Navigation>
@@ -44,12 +44,12 @@ export default {
 
 <style>
 body {
-  background-image: url("/images/bkg.png");
+  background-image: url("/images/background.jpg");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   font-family: sans-serif;
   font-size: 10px;
-  margin:0;
+  margin: 0;
 }
 
 .alert {
@@ -61,21 +61,12 @@ body {
   width: 100%;
   font-size: 15px;
 }
-nav {
-  /*margin: 10px auto 0;
 
-  padding: 1em 1em 1em;*/
-}
-.container {
-  padding:0 !important;
-}
-.container div#main {
+div#main {
   background: #fff;
   /* width: 75%; */
 
-   padding: 1em 1em 1em; 
-  margin: 10px auto 0;
-  box-shadow: 0 0 1em #222;
+  padding: 1em 1em 1em;
   border-radius: 2px;
 }
 form h2,
