@@ -19,6 +19,7 @@
     "moment-timezone": "^0.5.27",
     "vee-validate": "^2.2.8",
     "vue": "^2.6.10",
+    "vue-flux": "^6.0.1",
     "vue-moment": "^4.0.0",
     "vue-router": "^3.0.6",
     "vuex": "^3.1.1"

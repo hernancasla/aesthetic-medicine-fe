@@ -1,32 +1,31 @@
 <template>
-    <div>
-            <HelloWorld/>
-
-    </div>
+  <div>
+    <Slider />
+  </div>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
-import HelloWorld  from './HelloWorld'
+import { mapState, mapActions } from "vuex";
+import Slider from "./Slider";
 
 export default {
-    computed: {
-        ...mapState({
-            account: state => state.account,
-            files: state => state.files.all
-        })
-    },
-    created () {
-        this.getAllFiles();
-    },
-    methods: {
-        ...mapActions('files', {
-            getAllFiles: 'getAll',
-            deleteFile: 'delete'
-        })
-    },
-    components:{
-        HelloWorld
-    }
+  computed: {
+    ...mapState({
+      account: state => state.account,
+      files: state => state.files.all
+    })
+  },
+  created() {
+    this.getAllFiles();
+  },
+  methods: {
+    ...mapActions("files", {
+      getAllFiles: "getAll",
+      deleteFile: "delete"
+    })
+  },
+  components: {
+    Slider
+  }
 };
 </script>

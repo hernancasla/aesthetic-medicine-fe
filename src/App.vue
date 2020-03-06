@@ -44,8 +44,8 @@ export default {
 
 <style>
 body {
-  background-image: url("/images/background.jpg");
-  background-repeat: no-repeat; /* Do not repeat the image */
+  /* background-image: url("/images/background.jpg");
+  background-repeat: no-repeat; Do not repeat the image */
   background-size: cover;
   font-family: sans-serif;
   font-size: 10px;
@@ -64,9 +64,9 @@ body {
 
 div#main {
   background: #fff;
-  /* width: 75%; */
+  /* width: 75%; 
 
-  padding: 1em 1em 1em;
+  padding: 1em 1em 1em;*/
   border-radius: 2px;
 }
 form h2,
