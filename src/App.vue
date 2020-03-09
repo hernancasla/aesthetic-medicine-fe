@@ -1,14 +1,19 @@
 
 <template>
-  <div class="container-xl">
+  <div >
     <div class="row">
       <div class="col-12">
-        <Navigation></Navigation>
+        <Navigation/>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <router-view id="main"></router-view>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <Footer/>
       </div>
     </div>
   </div>
@@ -43,13 +48,16 @@ export default {
 </script>
 
 <style>
+
+
 body {
   /* background-image: url("/images/background.jpg");
   background-repeat: no-repeat; Do not repeat the image */
+   overflow-x: hidden;
+
   background-size: cover;
   font-family: sans-serif;
   font-size: 10px;
-  margin: 0;
 }
 
 .alert {
@@ -66,13 +74,13 @@ div#main {
   background: #fff;
   /* width: 75%; 
 
-  padding: 1em 1em 1em;*/
-  border-radius: 2px;
+  padding: 1em 1em 1em;
+  border-radius: 2px;*/
 }
 form h2,
 div h2 {
-  margin: 0 0 50px 0;
-  padding: 10px;
+  /*margin: 0 0 50px 0;
+  padding: 10px;*/
   text-align: center;
   font-size: 30px;
   color: #666666;

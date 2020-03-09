@@ -10,17 +10,22 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee, faUpload, faTrashAlt, faFileDownload, faEdit } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faUpload, faTrashAlt, faFileDownload, faEdit, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faFacebookF, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { dom } from '@fortawesome/fontawesome-svg-core'
 import { TablePlugin } from 'bootstrap-vue'
 import VueMoment from 'vue-moment'
 import moment from 'moment-timezone'
 import { NavbarPlugin } from 'bootstrap-vue'
-import Navigation  from './components/Navigation'
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 
 
-library.add(faCoffee, faTrashAlt, faUpload, faFileDownload, faEdit);
+library.add(faCoffee, faTrashAlt, faUpload, faFileDownload, faEdit, faFacebook, faTwitter,
+    faInstagram, faFacebookF, faLinkedin, faEnvelope,faWhatsapp);
 // library.add(faUpload);
+dom.watch()
 
 Vue.use(VeeValidate, {
     inject: true,
@@ -40,6 +45,7 @@ Vue.prototype.appConfig = config;
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('Navigation', Navigation)
+Vue.component('Footer', Footer)
 
 new Vue({
     el: '#app',
