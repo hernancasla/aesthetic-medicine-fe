@@ -1,6 +1,12 @@
 <template>
   <div>
-    <vue-flux :options="vfOptions" :images="vfImages" :transitions="vfTransitions" ref="slider">
+    <vue-flux
+      :options="vfOptions"
+      :images="vfImages"
+      :transitions="vfTransitions"
+      :captions="vfCaptions"
+      ref="slider"
+    >
       <template v-slot:preloader>
         <flux-preloader />
       </template>
@@ -12,6 +18,8 @@
       <template v-slot:controls>
         <flux-controls />
       </template>
+
+
 
       <template v-slot:index>
         <flux-index />
@@ -26,6 +34,7 @@ import {
   FluxCaption,
   FluxControls,
   FluxIndex,
+  FluxPagination,
   FluxPreloader
 } from "vue-flux";
 
@@ -35,53 +44,26 @@ export default {
     FluxCaption,
     FluxControls,
     FluxIndex,
+    FluxPagination,
     FluxPreloader
   },
 
   data: () => ({
     vfOptions: {
       autoplay: true,
-      delay: 500
+      delay: 800
     },
     vfImages: [
       "/slides/slide1.jpg",
       "/slides/slide2.jpg",
       "/slides/slide3.jpg"
     ],
-    vfTransitions: [
-      {
-        name: "kenburn",
-        options: {
-          totalDuration: 2000,
-          easing: "ease-in"
-        }
-      },
-      {
-        name: "round2",
-        options: {
-          rows: 0,
-          cols: 13,
-          rotateX: -540,
-          tileDuration: 800,
-          tileDelay: 100,
-          easing: "ease-out"
-        }
-      },
-      {
-        name: "zip",
-        options: {
-          cols: 10,
-          tileDuration: 600,
-          tileDelay: 80,
-          easing: "ease-in"
-        }
-      }
-    ],
-    vfCaptions: [
-      "I hear and I forget, I see and I remember, I do and I understand",
+    vfTransitions: ["kenburn", "explode", "blocks1"]
+    /*vfCaptions: [
+      "Caption for image 1",
       "Caption for image 2",
       "Caption for image 3"
-    ]
+    ]*/
   })
 };
 </script>
@@ -107,3 +89,6 @@ a {
   color: #42b983;
 }
 </style>
+
+
+

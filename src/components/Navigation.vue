@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4">
+        <div class="col-lg-2 col-md-4 col-sm-12 offset-lg-5">
         <img
           src="/images/logo.png"
           width="200"
@@ -10,7 +10,7 @@
           alt="Responsive image"
         />
       </div>
-        <div class="col-lg-4 col-md-8 col-sm-12">
+        <div class="col-lg-5 col-md-8 col-sm-12">
         <SocialNetworksLinks />
       </div>
     </div>
@@ -67,9 +67,9 @@ export default {
   }
 };
 </script>
-<style>
+<style >
 div#nav {
-  background-color: rgba(243, 223, 216, 0.808);
+  background-color: rgb(212, 162, 144);
   margin-left: auto;
   margin-right: auto;
   color: rgba(255, 255, 255, 1);
@@ -90,6 +90,9 @@ img#logo {
   margin: 20px auto;
 }
 .bg-info {
-  background-color: rgba(241, 207, 194, 0.808) !important;
+  background-color: rgb(204, 153, 134) !important;
+}
+#links a:hover{
+  color: rgba(255, 255, 255, 0.5);
 }
 </style>

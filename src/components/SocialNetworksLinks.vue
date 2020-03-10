@@ -63,7 +63,7 @@ export default {
 /* footer social icons */
 .socialnetwork-links {
   /* background-color: #fafcff; */
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -74,7 +74,7 @@ ul.social-network {
 }
 ul.social-network li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 /* footer social icons */
@@ -139,14 +139,14 @@ ul.social-network li {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  width: 60px;
-  height: 60px;
-  font-size: 22px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
 }
 
 .social-circle li i {
   margin: 0;
-  line-height: 60px;
+  line-height: 40px;
   text-align: center;
 }
 
