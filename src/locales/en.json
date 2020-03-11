@@ -4,7 +4,7 @@
       "name": "DRA. VEGA"
     },
     "facials": {
-      "caption": "FACIALS",
+      "title": "FACIALS",
       "rinomodelacion": "RHINOPLASTY WITHOUT SURGERY",
       "lips": "LIPS",
       "botox": "BOTOX",
@@ -12,7 +12,7 @@
       "laserFacialRejuvenation": "LASER FACIAL REJUVENATION"
     },
     "bodyTreatments": {
-      "caption": "BODY TREATMENTS",
+      "title": "BODY TREATMENTS",
       "mela":"MELA",
       "laserMela":"LASER MELA",
       "carboxiterapia": "CARBOXITERAPIA",

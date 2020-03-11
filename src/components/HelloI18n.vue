@@ -1,5 +1,5 @@
 <template>
-  <p>{{ $t('message') }}</p>
+  <p>{{ $t('menu.facials.title') }}</p>
 </template>
 
 <script>
