@@ -1,7 +1,12 @@
 {
   "menu": {
     "me": {
-      "name": "DRA. VEGA"
+      "name": "DRA. VEGA",
+      "mail": "",
+      "telephonNumber": "",
+      "facebookAccount": "",
+      "instagramAccount": "",
+      "whatsappAccount": ""
     },
     "facials": {
       "title": "FACIALS",
@@ -17,6 +22,7 @@
       "laserMela":"LASER MELA",
       "carboxiterapia": "CARBOXITERAPIA",
       "eboestetica": "EBOESTETICA"
-    }
+    },
+    "contact": "CONTACT"
   }
 }

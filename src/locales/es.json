@@ -1,7 +1,12 @@
 {
   "menu": {
     "me": {
-      "name": "DRA. VEGA"
+      "name": "DRA. VEGA",
+      "mail": "",
+      "telephonNumber": "",
+      "facebookAccount": "",
+      "instagramAccount": "",
+      "whatsappAccount": ""
     },
     "facials": {
       "title": "TRATAMIENTOS FACIALES",
@@ -9,14 +14,15 @@
       "lips": "LABIOS",
       "botox": "BOTOX",
       "plateletRichPlasma": "PLASMA RICO EN PLAQUETAS",
-      "laserFacialRejuvenation": "REJUVENECIMIENTO FASIAL LASER"
+      "laserFacialRejuvenation": "REJUVENECIMIENTO FACIAL LASER"
     },
     "bodyTreatments": {
       "title": "TRATAMIENTOS CORPORALES",
-      "mela":"MELA",
-      "laserMela":"MELA LASER",
+      "mela": "MELA",
+      "laserMela": "MELA LASER",
       "carboxiterapia": "CARBOXITERAPIA",
       "eboestetica": "EBOESTETICA"
-    }
+    },
+    "contact": "CONTACTO"
   }
 }
