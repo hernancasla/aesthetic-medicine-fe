@@ -1,0 +1,22 @@
+{
+  "menu": {
+    "me": {
+      "name": "DRA. VEGA"
+    },
+    "facials": {
+      "caption": "FACIALS",
+      "rinomodelacion": "RHINOPLASTY WITHOUT SURGERY",
+      "lips": "LIPS",
+      "botox": "BOTOX",
+      "plateletRichPlasma": "PLATELET-RICH PLASMA",
+      "laserFacialRejuvenation": "LASER FACIAL REJUVENATION"
+    },
+    "bodyTreatments": {
+      "caption": "BODY TREATMENTS",
+      "mela":"MELA",
+      "laserMela":"LASER MELA",
+      "carboxiterapia": "CARBOXITERAPIA",
+      "eboestetica": "EBOESTETICA"
+    }
+  }
+}
