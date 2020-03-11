@@ -220,12 +220,11 @@ footer {
 }
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced;
+  color: #fff;
 }
 .btn_get:hover {
   color: #fff;
   background: #6754e2;
-  border-color: #6754e2;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -292,14 +291,13 @@ button:focus {
 .btn_get_two {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #5e2ced;
-  border-color: #5e2ced;
-  color: #fff;
+  /* background:#b3bdca91; */
+  border-color:#b3bdcab6;
+  color: #6a7695;
 }
 
 .btn_get_two:hover {
-  background: transparent;
-  color: #5e2ced;
+  background:#b3bdca91;
 }
 
 .new_footer_top .f_social_icon a:hover {

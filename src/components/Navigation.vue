@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-12 offset-lg-5">
+      <div class="col-lg-2 col-md-4 col-sm-12 offset-lg-5">
         <img
           src="/images/logo.png"
           width="200"
@@ -10,8 +10,18 @@
           alt="Responsive image"
         />
       </div>
-        <div class="col-lg-5 col-md-8 col-sm-12">
-        <SocialNetworksLinks />
+      <div class="col-lg-5 col-md-8 col-sm-12">
+        <div class="row">
+          <div class="col-12 d-none d-lg-block d-md-block small rigth"><b>(011) 230922716</b></div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-lg-block d-md-block  small rigth"><b>HERNAN.CASLA@GMAIL.COM</b></div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <SocialNetworksLinks />
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -67,7 +77,7 @@ export default {
   }
 };
 </script>
-<style >
+<style>
 div#nav {
   background-color: rgb(212, 162, 144);
   margin-left: auto;
@@ -76,6 +86,10 @@ div#nav {
 }
 div#nav a {
   color: rgba(255, 255, 255, 1);
+}
+div#nav .rigth{
+  text-align: right;
+  padding-right: 2em;
 }
 #links {
   margin-left: auto !important;
@@ -92,7 +106,7 @@ img#logo {
 .bg-info {
   background-color: rgb(204, 153, 134) !important;
 }
-#links a:hover{
+#links a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 </style>

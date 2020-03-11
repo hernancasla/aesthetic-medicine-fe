@@ -64,13 +64,14 @@ export default {
 .socialnetwork-links {
   /* background-color: #fafcff; */
   padding: 10px 0;
-  text-align: center;
+  text-align: right;
 }
 
 ul.social-network {
   list-style: none;
   display: inline;
   margin: auto;
+  padding: 0px;
 }
 ul.social-network li {
   display: inline;
@@ -139,9 +140,9 @@ ul.social-network li {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
 }
 
 .social-circle li i {
@@ -176,13 +177,19 @@ ul.social-network li {
   background-color: #b3bdca2e;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
+  .socialnetwork-links {
+    text-align: right;
+  }
 }
 @media screen and (max-width: 450px) {
+  .socialnetwork-links {
+    text-align: center;
+  }
   ul.social-network li {
     display: inline;
     margin: 0 5px;
