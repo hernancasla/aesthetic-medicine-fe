@@ -1,0 +1,22 @@
+{
+  "menu": {
+    "me": {
+      "name": "DRA. VEGA"
+    },
+    "facials": {
+      "title": "TRATAMIENTOS FACIALES",
+      "rinomodelacion": "RINOMODELACION",
+      "lips": "LABIOS",
+      "botox": "BOTOX",
+      "plateletRichPlasma": "PLASMA RICO EN PLAQUETAS",
+      "laserFacialRejuvenation": "REJUVENECIMIENTO FASIAL LASER"
+    },
+    "bodyTreatments": {
+      "title": "TRATAMIENTOS CORPORALES",
+      "mela":"MELA",
+      "laserMela":"MELA LASER",
+      "carboxiterapia": "CARBOXITERAPIA",
+      "eboestetica": "EBOESTETICA"
+    }
+  }
+}

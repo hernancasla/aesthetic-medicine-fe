@@ -19,6 +19,7 @@ import moment from 'moment-timezone'
 import { NavbarPlugin } from 'bootstrap-vue'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
+import i18n from './i18n'
 
 
 
@@ -47,9 +48,11 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('Navigation', Navigation)
 Vue.component('Footer', Footer)
 
+
 new Vue({
     el: '#app',
     router,
     store,
+    i18n,
     render: h => h(App)
 });
