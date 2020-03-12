@@ -58,7 +58,7 @@ export default {
       "/slides/slide2.jpg",
       "/slides/slide3.jpg"
     ],
-    vfTransitions: ["kenburn", "explode", "blocks1"]
+    vfTransitions: ["kenburn", "blocks1"]
     /*vfCaptions: [
       "Caption for image 1",
       "Caption for image 2",

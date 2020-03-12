@@ -13,12 +13,12 @@
       <div class="col-lg-5 col-md-8 col-sm-12">
         <div class="row">
           <div class="col-12 d-none d-lg-block d-md-block rigth">
-            <b>(011) 230922716</b>
+            <b>{{ $t('nav.me.telephonNumber') }}</b>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 d-lg-block d-md-block rigth">
-            <b>HERNAN.CASLA@GMAIL.COM</b>
+          <div class="col-12 d-none d-lg-block d-md-block rigth">
+            <b>{{ $t('nav.me.mail') }}</b>
           </div>
         </div>
         <div class="row">
@@ -38,35 +38,35 @@
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav id="links">
               <b-nav-item href="/#">HOME</b-nav-item>
-              <b-nav-item href="/upload">{{ $t('menu.me.name') }}</b-nav-item>
+              <b-nav-item href="/upload">{{ $t('nav.me.name') }}</b-nav-item>
               <b-nav-item-dropdown
                 id="my-nav-dropdown"
-                :text="$t('menu.facials.title')"
+                :text="$t('nav.facials.title')"
                 toggle-class="nav-link-custom"
                 right
               >
-                <b-dropdown-item>{{ $t('menu.facials.rinomodelacion') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.facials.lips') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.facials.botox') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.facials.plateletRichPlasma') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.facials.laserFacialRejuvenation') }}</b-dropdown-item>
+                <b-dropdown-item href="/upload">{{ $t('nav.facials.rinomodelacion') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.facials.lips') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.facials.botox') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.facials.plateletRichPlasma') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.facials.laserFacialRejuvenation') }}</b-dropdown-item>
               </b-nav-item-dropdown>
               <b-nav-item-dropdown
                 id="my-nav-dropdown"
-                :text="$t('menu.bodyTreatments.title')"
+                :text="$t('nav.bodyTreatments.title')"
                 toggle-class="nav-link-custom"
                 right
               >
-                <b-dropdown-item>{{ $t('menu.bodyTreatments.mela') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.bodyTreatments.laserMela') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.bodyTreatments.carboxiterapia') }}</b-dropdown-item>
-                <b-dropdown-item>{{ $t('menu.bodyTreatments.eboestetica') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.bodyTreatments.mela') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.bodyTreatments.laserMela') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.bodyTreatments.carboxiterapia') }}</b-dropdown-item>
+                <b-dropdown-item>{{ $t('nav.bodyTreatments.eboestetica') }}</b-dropdown-item>
               </b-nav-item-dropdown>
-              <b-nav-item href="/upload">{{ $t('menu.contact') }}</b-nav-item>
+              <b-nav-item href="/upload">{{ $t('nav.contact') }}</b-nav-item>
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
-            <b-navbar-nav class="ml-auto">
+            <b-navbar-nav>
               <b-nav-item-dropdown text="LANG" right>
                 <b-dropdown-item href="#">EN</b-dropdown-item>
                 <b-dropdown-item href="#">ES</b-dropdown-item>
@@ -101,13 +101,6 @@ export default {
 };
 </script>
 <style>
-.navbar-nav li:hover > .dropdown-menu {
-  display: block;
-  margin: 0;
-  background-color: rgb(204, 153, 134);
-  border: 0;
-  font-size: 0.75rem;
-}
 div#nav {
   background-color: rgb(212, 162, 144);
   margin-left: auto;
@@ -138,6 +131,38 @@ img#logo {
   background-color: rgb(204, 153, 134) !important;
 }
 #links a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+.dropdown-item {
+  display: block;
+  margin: 0;
+  background-color: rgb(204, 153, 134) ;
+  font-size: 0.75rem;
+  border: 0px;
+}
+@media screen and (max-width: 450px) {
+  .dropdown-menu {
+    background-color: rgb(204, 153, 134) !important;
+    border: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-nav li:hover > .dropdown-menu {
+    display: block;
+    margin: 0;
+    background-color: rgb(204, 153, 134);
+    border: 0;
+    font-size: 0.75rem;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #f8f9fa2e;
+    color: rgba(255, 255, 255, 1);
+  }
 }
 </style>
