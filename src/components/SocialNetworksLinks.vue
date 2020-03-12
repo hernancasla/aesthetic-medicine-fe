@@ -1,5 +1,5 @@
 <template>
-  <div class="socialnetwork-links">
+  <div class="socialnetwork-links" id="socialnetwork">
     <ul class="social-network social-circle">
       <li>
         <a class="icoMail" href="mailto:hernancasla@gmail.com" title="Mail">
@@ -61,40 +61,40 @@ export default {
 </script>
 <style>
 /* footer social icons */
-.socialnetwork-links {
+div#socialnetwork {
   /* background-color: #fafcff; */
   padding: 10px 0;
   text-align: right;
 }
 
-ul.social-network {
+div#socialnetwork ul.social-network {
   list-style: none;
   display: inline;
   margin: auto;
   padding: 0px;
 }
-ul.social-network li {
+div#socialnetwork ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
 
 /* footer social icons */
-.social-network a.icoFacebook:hover {
+div#socialnetwork .social-network a.icoFacebook:hover {
   background-color: #3b5898a1;
 }
-.social-network a.icoTwitter:hover {
+div#socialnetwork .social-network a.icoTwitter:hover {
   background-color: #33ccff9d;
 }
-.social-network a.icoWhatsapp:hover {
+div#socialnetwork .social-network a.icoWhatsapp:hover {
   background-color: #00ab6cb0;
 }
-.social-network a.icoMail:hover {
+div#socialnetwork .social-network a.icoMail:hover {
   background-color: #aa2200c2;
 }
-.social-network a.icoLinkedin:hover {
+div#socialnetwork .social-network a.icoLinkedin:hover {
   background-color: #007ab7ab;
 }
-.social-network a.icoInstagram:hover {
+div#socialnetwork .social-network a.icoInstagram:hover {
   background: #f09533bd;
   background: -moz-linear-gradient(
     45deg,
@@ -123,16 +123,16 @@ ul.social-network li {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-.social-network a.icoRss:hover i,
-.social-network a.icoFacebook:hover i,
-.social-network a.icoTwitter:hover i,
-.social-network a.icoMail:hover i,
-.social-network a.icoVimeo:hover i,
-.social-network a.icoLinkedin:hover i {
+div#socialnetwork .social-network a.icoRss:hover i,
+div#socialnetwork .social-network a.icoFacebook:hover i,
+div#socialnetwork .social-network a.icoTwitter:hover i,
+div#socialnetwork .social-network a.icoMail:hover i,
+div#socialnetwork .social-network a.icoVimeo:hover i,
+div#socialnetwork .social-network a.icoLinkedin:hover i {
   color: #fff;
 }
 
-.social-circle li a {
+div#socialnetwork .social-circle li a {
   display: inline-block;
   position: relative;
   margin: 0 auto 0 auto;
@@ -145,14 +145,14 @@ ul.social-network li {
   font-size: 16px;
 }
 
-.social-circle li i {
+div#socialnetwork .social-circle li i {
   margin: 0;
   line-height: 40px;
   text-align: center;
 }
 
-.social-circle li a:hover i,
-.triggeredHover {
+div#socialnetwork .social-circle li a:hover i,
+div#socialnetwork .triggeredHover {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -ms--transform: rotate(360deg);
@@ -164,7 +164,7 @@ ul.social-network li {
   transition: all 0.2s;
 }
 
-.social-circle i {
+div#socialnetwork .social-circle i {
   color: #fff;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
@@ -173,29 +173,29 @@ ul.social-network li {
   transition: all 0.8s;
 }
 
-.social-circle a {
+div#socialnetwork .social-circle a {
   background-color: #b3bdca2e;
 }
 
 @media screen and (max-width: 768px) {
-  ul.social-network li {
+  div#socialnetwork ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
-  .socialnetwork-links {
-    text-align: right;
+  div#socialnetwork {
+    text-align: center;
   }
 }
 @media screen and (max-width: 450px) {
-  .socialnetwork-links {
+  div#socialnetwork {
     text-align: center;
   }
-  ul.social-network li {
+  div#socialnetwork ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
 
-  .social-circle li a {
+  div#socialnetwork .social-circle li a {
     display: inline-block;
     position: relative;
     margin: 0 auto 0 auto;
@@ -208,19 +208,19 @@ ul.social-network li {
     font-size: 16px;
   }
 
-  .social-circle li i {
+  div#socialnetwork .social-circle li i {
     margin: 0;
     line-height: 40px;
     text-align: center;
   }
 }
 @media screen and (max-width: 350px) {
-  ul.social-network li {
+  div#socialnetwork ul.social-network li {
     display: inline;
     margin: 0 2px;
   }
 
-  .social-circle li a {
+  div#socialnetwork .social-circle li a {
     display: inline-block;
     position: relative;
     margin: 0 auto 0 auto;
@@ -233,7 +233,7 @@ ul.social-network li {
     font-size: 16px;
   }
 
-  .social-circle li i {
+  div#socialnetwork .social-circle li i {
     margin: 0;
     line-height: 40px;
     text-align: center;
