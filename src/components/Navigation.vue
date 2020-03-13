@@ -40,7 +40,7 @@
               <b-nav-item href="/#">HOME</b-nav-item>
               <b-nav-item href="/upload">{{ $t('nav.me.name') }}</b-nav-item>
               <b-nav-item-dropdown
-                id="facials-dropdown"
+                id="my-nav-dropdown"
                 :text="$t('nav.facials.title')"
                 toggle-class="nav-link-custom"
                 right
@@ -52,7 +52,7 @@
                 <b-dropdown-item>{{ $t('nav.facials.laserFacialRejuvenation') }}</b-dropdown-item>
               </b-nav-item-dropdown>
               <b-nav-item-dropdown
-                id="body-dropdown"
+                id="my-nav-dropdown"
                 :text="$t('nav.bodyTreatments.title')"
                 toggle-class="nav-link-custom"
                 right
@@ -67,12 +67,12 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav>
-              <b-nav-dd text="LANG" right>
+              <b-nav-item-dropdown text="LANG" right>
                 <b-dropdown-item href="#">EN</b-dropdown-item>
                 <b-dropdown-item href="#">ES</b-dropdown-item>
                 <b-dropdown-item href="#">RU</b-dropdown-item>
                 <b-dropdown-item href="#">FA</b-dropdown-item>
-              </b-nav-dd>
+              </b-nav-item-dropdown>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -115,75 +115,54 @@ div#nav .rigth {
   text-align: right;
   padding-right: 2em;
 }
-div#nav #links {
+#links {
   margin: auto !important;
 }
-div#nav #links a {
+#links a {
   padding-right: 2em;
 }
-div#nav img#logo {
+img#logo {
   margin-left: auto;
   margin-right: auto;
   display: block;
   margin: 20px auto;
 }
-div#nav .bg-info {
+.bg-info {
   background-color: rgb(204, 153, 134) !important;
 }
-div#nav #links a:hover {
+#links a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-div#nav ul.social-network li {
+ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
-div#nav .dropdown-item {
+.dropdown-item {
   display: block;
   margin: 0;
-  background-color: rgb(204, 153, 134);
+  background-color: rgb(204, 153, 134) ;
   font-size: 0.75rem;
   border: 0px;
 }
-@media screen and (max-width: 768px) {
-  div#nav .dropdown-menu {
-    background-color: rgb(204, 153, 134) !important;
+@media screen and (max-width: 450px) {
+  .dropdown-menu {
+    background-color: rgb(204, 153, 134) ;
     border: 0px;
   }
-  div#nav .dropdown-item:hover,
-  div#nav .dropdown-item:focus {
-    background-color: #f8f9fa2e;
-    color: rgba(255, 255, 255, 1);
-  }
 }
-@media screen and (min-width: 769px) {
-  div#nav .dropdown:hover .dropdown-menu,
-  div#nav .btn-group:hover .dropdown-menu {
-    display: block;
-  }
-  div#nav .dropdown-menu {
-    margin: auto;
-    background-color: rgb(204, 153, 134) !important;
-    border: 0;
-  }
-  div#nav .dropdown-toggle {
-    margin: auto;
-  }
-  div#nav .navbar .dropdown-toggle,
-  div#nav .nav-tabs .dropdown-toggle {
-    margin: auto;
-  } /*
-  div#nav .navbar-nav li:hover > .dropdown-menu {
+@media screen and (min-width: 768px) {
+  .navbar-nav li:hover > .dropdown-menu {
     display: block;
     margin: 0;
     background-color: rgb(204, 153, 134);
     border: 0;
     font-size: 0.75rem;
   }
-  div#nav .dropdown-item:hover,
-  div#nav .dropdown-item:focus {
+  .dropdown-item:hover,
+  .dropdown-item:focus {
     background-color: #f8f9fa2e;
     color: rgba(255, 255, 255, 1);
-  } */
+  }
 }
 </style>

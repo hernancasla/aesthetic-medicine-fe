@@ -1,13 +1,32 @@
 {
-  "nav": {
-    "me": {
-      "name": "DRA. VEGA",
-      "mail": "HERNAN.CASLA@GMAIL.COM",
-      "telephonNumber": "(011) 230922716",
-      "facebookAccount": "",
-      "instagramAccount": "",
-      "whatsappAccount": ""
+  "me": {
+    "name": "DRA. VEGA",
+    "mail": "HERNAN.CASLA@GMAIL.COM",
+    "telephonNumber": "(011) 230922716",
+    "facebookAccount": "https://www.facebook.com/cinthya.vega",
+    "instagramAccount": "https://www.instagram.com/dra.cinthya.vega/",
+    "whatsappAccount": "https://api.whatsapp.com/send?phone=5491123922716",
+    "mailAccount": "mailto:hernancasla@gmail.com"
+  },
+  "footer": {
+    "getInTouch": {
+      "title": "Get in Touch",
+      "description": "Don’t miss any updates of our new templates and extensions.!",
+      "subscribe": "Subscribe"
     },
+    "contact": {
+      "title": "Contact Us",
+      "address": "Merlo 4775, Avellaneda, Buenos Aires",
+      "celltelephone": "CellPhone: (011) 230922716",
+      "telephone": "Phone: (011) 230922716"
+    },
+    "teamSolution": "Team Solutions",
+    "allRigthsReserved": "© 2020 Dra. Vega. All rigths reserved.",
+    "madeBy": "Made by Ceballos OH"
+  },
+  "nav": {
+    "home": "HOME",
+    "name": "DRA. VEGA",
     "facials": {
       "title": "FACIALS",
       "rinomodelacion": "RHINOPLASTY WITHOUT SURGERY",
@@ -18,8 +37,8 @@
     },
     "bodyTreatments": {
       "title": "BODY TREATMENTS",
-      "mela":"MELA",
-      "laserMela":"LASER MELA",
+      "mela": "MELA",
+      "laserMela": "LASER MELA",
       "carboxiterapia": "CARBOXITERAPIA",
       "eboestetica": "EBOESTETICA"
     },

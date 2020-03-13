@@ -1,13 +1,34 @@
 {
-  "nav": {
-    "me": {
-      "name": "DRA. VEGA",
-      "mail": "HERNAN.CASLA@GMAIL.COM",
-      "telephonNumber": "(011) 230922716",
-      "facebookAccount": "",
-      "instagramAccount": "",
-      "whatsappAccount": ""
+  "me": {
+    "name": "DRA. VEGA",
+    "mail": "HERNAN.CASLA@GMAIL.COM",
+    "telephonNumber": "(011) 230922716",
+    "facebookAccount": "https://www.facebook.com/cinthya.vega",
+    "instagramAccount": "https://www.instagram.com/dra.cinthya.vega/",
+    "whatsappAccount": "https://api.whatsapp.com/send?phone=5491123922715",
+    "mailAccount": "mailto:hernancasla@gmail.com"
+
+  },
+  "footer": {
+    "getInTouch": {
+      "title": "Mantenganse en contacto",
+      "description": "No se pierda de los nuevos tratamientos y noticias!",
+      "subscribe": "Subscribirse"
     },
+    "contact": {
+      "title": "Contancto",
+      "address": "Merlo 4775, Avellaneda, Buenos Aires",
+      "celltelephone": "Celular: (011) 230922716",
+      "telephone": "Telefono: (011) 230922716"
+    },
+    "teamSolution": "Redes Sociales",
+    "allRigthsReserved": "© 2020 Dra Vega. Todos los derechos reservados",
+    "madeBy": "Made by Ceballos OH"
+
+  },
+  "nav": {
+    "home": "HOME",
+    "name": "DRA. VEGA",
     "facials": {
       "title": "TRATAMIENTOS FACIALES",
       "rinomodelacion": "RINOMODELACION",
@@ -22,7 +43,6 @@
       "laserMela": "MELA LASER",
       "carboxiterapia": "CARBOXITERAPIA",
       "eboestetica": "EBOESTETICA"
-    },
-    "contact": "CONTACTO"
+    }
   }
 }

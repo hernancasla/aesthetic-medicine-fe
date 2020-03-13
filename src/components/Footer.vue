@@ -7,14 +7,14 @@
     <div class="new_footer_top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div
               class="f_widget company_widget wow fadeInLeft"
               data-wow-delay="0.2s"
               style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;"
             >
-              <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-              <p>Don’t miss any updates of our new templates and extensions.!</p>
+              <h3 class="f-title f_600 t_color f_size_18">{{ $t('footer.getInTouch.title') }}</h3>
+              <p>{{ $t('footer.getInTouch.description') }}</p>
               <form
                 action="#"
                 class="f_subscribe_two mailchimp"
@@ -23,83 +23,40 @@
                 _lpchecked="1"
               >
                 <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" />
-                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                <button
+                  class="btn btn_get btn_get_two"
+                  type="submit"
+                >{{ $t('footer.getInTouch.subscribe') }}</button>
                 <p class="mchimp-errmessage" style="display: none;"></p>
                 <p class="mchimp-sucmessage" style="display: none;"></p>
               </form>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div
-              class="f_widget about-widget pl_70 wow fadeInLeft"
-              data-wow-delay="0.4s"
-              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;"
-            >
-              <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-              <ul class="list-unstyled f_list">
-                <li>
-                  <a href="#">Company</a>
-                </li>
-                <li>
-                  <a href="#">Android App</a>
-                </li>
-                <li>
-                  <a href="#">ios App</a>
-                </li>
-                <li>
-                  <a href="#">Desktop</a>
-                </li>
-                <li>
-                  <a href="#">Projects</a>
-                </li>
-                <li>
-                  <a href="#">My tasks</a>
-                </li>
-              </ul>
-            </div>
+          <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-12">
+            <h3 class="f-title f_600 t_color f_size_18">{{ $t('footer.teamSolution') }}</h3>
+            <TeamSolutions style="text-align:left" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div
               class="f_widget about-widget pl_70 wow fadeInLeft"
               data-wow-delay="0.6s"
               style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;"
             >
-              <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+              <h3 class="f-title f_600 t_color f_size_18">{{ $t('footer.contact.title') }}</h3>
               <ul class="list-unstyled f_list">
                 <li>
-                  <a href="#">FAQ</a>
+                  <a href="#">{{ $t('footer.contact.celltelephone') }}</a>
                 </li>
                 <li>
-                  <a href="#">Term &amp; conditions</a>
+                  <a href="#">{{ $t('footer.contact.telephone') }}</a>
                 </li>
                 <li>
-                  <a href="#">Reporting</a>
-                </li>
-                <li>
-                  <a href="#">Documentation</a>
-                </li>
-                <li>
-                  <a href="#">Support Policy</a>
-                </li>
-                <li>
-                  <a href="#">Privacy</a>
+                  <a
+                    target="_blank"
+                    href="https://goo.gl/maps/4PPob9ZfyrdKzE9r9"
+                  >{{ $t('footer.contact.address') }}</a>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div
-              class="f_widget social-widget pl_70 wow fadeInLeft"
-              data-wow-delay="0.8s"
-              style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;"
-            >
-              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-              <div class="f_social_icon">
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-pinterest"></a>
-              </div>
             </div>
           </div>
         </div>
@@ -113,13 +70,13 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-sm-7">
-            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+            <p class="mb-0 f_400">{{ $t('footer.allRigthsReserved') }}</p>
           </div>
           <div class="col-lg-6 col-sm-5 text-right">
             <p>
-              Made with
-              <i class="icon_heart"></i> in
-              <a href="#">CakeCounter</a>
+              {{ $t('footer.madeBy') }}
+              <!-- <i class="icon_heart"></i> in
+              <a href="#">CakeCounter</a>-->
             </p>
           </div>
         </div>
@@ -128,17 +85,17 @@
   </footer>
 </template>
 <script>
-import SocialNetworksLinks from "./SocialNetworksLinks";
+import TeamSolutions from "./TeamSolutions";
 
 export default {
   name: "Footer",
 
   components: {
-    SocialNetworksLinks
+    TeamSolutions
   }
 };
 </script>
-<style>
+<style scoped>
 /* footer social icons
 footer {
   background-color: rgb(181, 128, 108);
@@ -292,12 +249,12 @@ button:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   /* background:#b3bdca91; */
-  border-color:#b3bdcab6;
+  border-color: #b3bdcab6;
   color: #6a7695;
 }
 
 .btn_get_two:hover {
-  background:#b3bdca91;
+  background: #b3bdca91;
 }
 
 .new_footer_top .f_social_icon a:hover {
@@ -333,15 +290,13 @@ h6 {
 .new_footer_top .footer_bg {
   position: absolute;
   bottom: 0;
-  background: url("/images/footer_bg.png")
-    scroll center 0;
+  background: url("/images/footer_bg.png") scroll center 0;
   width: 100%;
   height: 266px;
 }
 
 .new_footer_top .footer_bg .footer_bg_one {
-  background: url("/images/volks.gif")
-    no-repeat center center;
+  background: url("/images/volks.gif") no-repeat center center;
   width: 330px;
   height: 105px;
   background-size: 100%;
@@ -353,8 +308,7 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
-  background: url("/images/cyclist.gif")
-    no-repeat center center;
+  background: url("/images/cyclist.gif") no-repeat center center;
   width: 88px;
   height: 100px;
   background-size: 100%;
