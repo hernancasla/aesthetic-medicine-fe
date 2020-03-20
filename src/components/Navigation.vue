@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-2 col-md-4 col-sm-12 offset-lg-5">
         <img
-          src="/images/logo.png"
+          src="/images/logocin2.png"
           width="200"
           id="logo"
           class="img rounded"
@@ -13,12 +13,12 @@
       <div class="col-lg-5 col-md-8 col-sm-12">
         <div class="row">
           <div class="col-12 d-none d-lg-block d-md-block rigth">
-            <b>{{ $t('nav.me.telephonNumber') }}</b>
+            <b>{{ $t('me.telephonNumber') }}</b>
           </div>
         </div>
         <div class="row">
           <div class="col-12 d-none d-lg-block d-md-block rigth">
-            <b>{{ $t('nav.me.mail') }}</b>
+            <b>{{ $t('me.mail') }}</b>
           </div>
         </div>
         <div class="row">
@@ -37,8 +37,8 @@
 
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav id="links">
-              <b-nav-item href="/#">HOME</b-nav-item>
-              <b-nav-item href="/upload">{{ $t('nav.me.name') }}</b-nav-item>
+              <b-nav-item href="/#">{{ $t('nav.home') }}</b-nav-item>
+              <b-nav-item href="/upload">{{ $t('me.name') }}</b-nav-item>
               <b-nav-item-dropdown
                 id="my-nav-dropdown"
                 :text="$t('nav.facials.title')"
@@ -115,54 +115,81 @@ div#nav .rigth {
   text-align: right;
   padding-right: 2em;
 }
-#links {
+div#nav #links {
   margin: auto !important;
 }
-#links a {
+div#nav #links a {
   padding-right: 2em;
 }
-img#logo {
+div#nav img#logo {
   margin-left: auto;
   margin-right: auto;
   display: block;
   margin: 20px auto;
 }
-.bg-info {
+div#nav .bg-info {
   background-color: rgb(204, 153, 134) !important;
 }
-#links a:hover {
+div#nav #links a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-ul.social-network li {
+div#nav ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
-.dropdown-item {
-  display: block;
-  margin: 0;
-  background-color: rgb(204, 153, 134) ;
+div#nav .dropdown-menu {
   font-size: 0.75rem;
-  border: 0px;
 }
-@media screen and (max-width: 450px) {
-  .dropdown-menu {
-    background-color: rgb(204, 153, 134) ;
+@media screen and (max-width: 768px) {
+  div#nav .dropdown-item {
+    display: block;
+    margin: 0;
+    background-color: rgb(204, 153, 134);
     border: 0px;
   }
+  div#nav .navbar-nav .dropdown-menu {
+    background-color: rgb(204, 153, 134);
+    border: 0px;
+  }
+  div#nav .b-nav-dropdown li > a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1) !important;
+  }
 }
-@media screen and (min-width: 768px) {
-  .navbar-nav li:hover > .dropdown-menu {
+@media screen and (min-width: 769px) {
+  div#nav .dropdown:hover .dropdown-menu,
+  div#nav .btn-group:hover .dropdown-menu {
+    display: block;
+  }
+  div#nav .dropdown-menu {
+    margin-top: 0;
+    background-color: #cc9986;
+    border: 0px;
+  }
+  div#nav .dropdown-toggle {
+    margin-bottom: 2px;
+  }
+  div#nav .navbar .dropdown-toggle,
+  div#nav .nav-tabs .dropdown-toggle {
+    margin-bottom: 0;
+  }
+
+  div#nav .b-nav-dropdown li > a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1) !important;
+  }
+  /*.navbar-nav li:hover > .dropdown-menu {
     display: block;
     margin: 0;
     background-color: rgb(204, 153, 134);
     border: 0;
     font-size: 0.75rem;
-  }
+  }}
   .dropdown-item:hover,
   .dropdown-item:focus {
     background-color: #f8f9fa2e;
     color: rgba(255, 255, 255, 1);
-  }
+  } */
 }
 </style>

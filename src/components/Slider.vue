@@ -19,8 +19,6 @@
         <flux-controls />
       </template>
 
-
-
       <template v-slot:index>
         <flux-index />
       </template>
@@ -51,14 +49,15 @@ export default {
   data: () => ({
     vfOptions: {
       autoplay: true,
-      delay: 800
+      delay: 1000
     },
     vfImages: [
       "/slides/slide1.jpg",
-      "/slides/slide2.jpg",
-      "/slides/slide3.jpg"
+      "/slides/slide2.png",
+      "/slides/slide3.png",
+      "/slides/slide4.png"
     ],
-    vfTransitions: ["kenburn", "blocks1"]
+    vfTransitions: ["round2","blocks2", "blocks1","round1"]
     /*vfCaptions: [
       "Caption for image 1",
       "Caption for image 2",

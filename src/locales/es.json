@@ -17,12 +17,12 @@
     },
     "contact": {
       "title": "Contancto",
-      "address": "Merlo 4775, Avellaneda, Buenos Aires",
+      "address": "29 Rue de la Division Leclerc, 91300 Massy, Francia",
       "celltelephone": "Celular: (011) 230922716",
       "telephone": "Telefono: (011) 230922716"
     },
     "teamSolution": "Redes Sociales",
-    "allRigthsReserved": "© 2020 Dra Vega. Todos los derechos reservados",
+    "allRigthsReserved": "Copy Rigths © 2020 Dra Vega. Todos los derechos reservados",
     "madeBy": "Made by Ceballos OH"
 
   },
@@ -43,6 +43,7 @@
       "laserMela": "MELA LASER",
       "carboxiterapia": "CARBOXITERAPIA",
       "eboestetica": "EBOESTETICA"
-    }
+    },
+    "contact": "CONTACTO"
   }
 }
