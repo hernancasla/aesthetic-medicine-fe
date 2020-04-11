@@ -4,17 +4,17 @@ import Router from 'vue-router';
 import HomePage from '../components/HomePage'
 import LoginPage from '../components/LoginPage'
 import RegisterPage from '../components/RegisterPage'
-import FileUpload from '../components/FileUpload'
+import FileUpload from '../components/Me'
 import FilesView from '../components/FilesView'
 
 
 
 Vue.use(Router);
 
-export const router = new Router({
+export const  router = new Router({
   mode: 'history',
   routes: [
-    { path: '/', component: HomePage},
+    { path: '/', component: HomePage, meta: {title: 'Dashboard'}},
     { path: '/login', component: LoginPage },
     { path: '/register', component: RegisterPage },
     { path: '/upload', component: FileUpload },

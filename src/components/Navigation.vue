@@ -2,7 +2,7 @@
   <div id="nav">
     <div class="row">
       <div class="col-lg-2 col-md-4 col-sm-12 offset-lg-5">
-        <img
+        <img 
           src="/images/logocin2.png"
           width="200"
           id="logo"
@@ -38,7 +38,7 @@
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav id="links">
               <b-nav-item href="/#">{{ $t('nav.home') }}</b-nav-item>
-              <b-nav-item href="/upload">{{ $t('me.name') }}</b-nav-item>
+              <b-nav-item href="#me">{{ $t('me.name') }}</b-nav-item>
               <b-nav-item-dropdown
                 id="my-nav-dropdown"
                 :text="$t('nav.facials.title')"

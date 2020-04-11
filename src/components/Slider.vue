@@ -1,28 +1,24 @@
 <template>
-  <div>
-    <vue-flux
-      :options="vfOptions"
-      :images="vfImages"
-      :transitions="vfTransitions"
-      :captions="vfCaptions"
-      ref="slider"
-    >
-      <template v-slot:preloader>
-        <flux-preloader />
-      </template>
+  <div class="row">
+    <div class="col-12">
+      <vue-flux :options="vfOptions" :images="vfImages()" :transitions="vfTransitions" ref="slider">
+        <template v-slot:preloader>
+          <flux-preloader />
+        </template>
 
-      <template v-slot:caption>
-        <flux-caption />
-      </template>
+        <template v-slot:caption>
+          <flux-caption />
+        </template>
 
-      <template v-slot:controls>
-        <flux-controls />
-      </template>
+        <template v-slot:controls>
+          <flux-controls />
+        </template>
 
-      <template v-slot:index>
-        <flux-index />
-      </template>
-    </vue-flux>
+        <template v-slot:index>
+          <flux-index />
+        </template>
+      </vue-flux>
+    </div>
   </div>
 </template>
 
@@ -51,13 +47,24 @@ export default {
       autoplay: true,
       delay: 1000
     },
-    vfImages: [
-      "/slides/slide1.jpg",
-      "/slides/slide2.png",
-      "/slides/slide3.png",
-      "/slides/slide4.png"
-    ],
-    vfTransitions: ["round2","blocks2", "blocks1","round1"]
+    vfImages: () => {
+      if (document.body.clientWidth >= 768)
+        return [
+          "/slides/slide1.jpg",
+          "/slides/slide2.png",
+          "/slides/slide3.png",
+          "/slides/slide4.png"
+        ];
+      else
+        return [
+          "/slides/slide1_sm.jpg",
+          "/slides/slide2_sm.jpg",
+          "/slides/slide3_sm.jpg",
+          "/slides/slide4_sm.jpg",
+          "/slides/slide5_sm.pnjpgg"
+        ];
+    },
+    vfTransitions: ["round2", "blocks2", "blocks1", "round1"]
     /*vfCaptions: [
       "Caption for image 1",
       "Caption for image 2",

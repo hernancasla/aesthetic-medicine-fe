@@ -2,8 +2,11 @@
   "name": "frontend-la",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=13"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
@@ -23,20 +26,20 @@
     "vue": "^2.6.10",
     "vue-flux": "^6.0.1",
     "vue-i18n": "^8.15.5",
-    "vue-moment": "^4.0.0",
+    "vue-moment": "^4.1.0",
     "vue-router": "^3.0.6",
-    "vuex": "^3.1.1"
-  },
-  "devDependencies": {
+    "vuex": "^3.1.1",
+    "@vue/cli-service": "^3.12.1",
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.11.0",
+    "vue-cli-plugin-i18n": "^0.6.1",
     "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-cli-plugin-i18n": "^0.6.1",
-    "vue-template-compiler": "^2.6.10"
+    "eslint-plugin-vue": "^5.0.0"
   },
   "eslintConfig": {
     "root": true,

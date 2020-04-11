@@ -1,12 +1,17 @@
 <template>
   <div>
     <Slider />
+    <Me id="me"/>
+    <Intro/>
   </div>
 </template>
 
 <script>
 import { mapState, mapActions } from "vuex";
 import Slider from "./Slider";
+import Me from "./Me";
+import Intro from "./Intro";
+
 
 export default {
   computed: {
@@ -25,7 +30,9 @@ export default {
     })
   },
   components: {
-    Slider
+    Slider,
+    Me,
+    Intro
   }
 };
 </script>

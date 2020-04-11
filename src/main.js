@@ -21,8 +21,6 @@ import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import i18n from './i18n'
 
-
-
 library.add(faCoffee, faTrashAlt, faUpload, faFileDownload, faEdit, faFacebook, faTwitter,
     faInstagram, faFacebookF, faLinkedin, faEnvelope,faWhatsapp);
 // library.add(faUpload);
@@ -47,7 +45,10 @@ Vue.prototype.appConfig = config;
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('Navigation', Navigation)
 Vue.component('Footer', Footer)
-
+router.beforeEach((to, from, next) => {
+    document.title = i18n.t("page.title");
+    next()
+  })
 
 new Vue({
     el: '#app',
