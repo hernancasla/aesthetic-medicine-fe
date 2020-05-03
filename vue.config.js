@@ -1,6 +1,8 @@
 module.exports = {
   devServer: {
-    disableHostCheck: true
+    disableHostCheck: true,
+//    port: 80,
+
     },
   pluginOptions: {
     i18n: {

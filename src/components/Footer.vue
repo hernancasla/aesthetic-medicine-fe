@@ -61,22 +61,27 @@
           </div>
         </div>
       </div>
-      <div class="footer_bg">
-        <div class="footer_bg_one"></div>
-        <div class="footer_bg_two"></div>
+      <div v-if="isSm">
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
       </div>
     </div>
     <div class="footer_bottom">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-7">
+          <div class="col-lg-6 col-sm-12">
             <p class="mb-0 f_400">{{ $t('footer.allRigthsReserved') }}</p>
           </div>
-          <div class="col-lg-6 col-sm-5 text-right">
+          <div class="col-lg-6 d-none d-lg-block d-md-block text-right">
             <p>
               {{ $t('footer.madeBy') }}
-              <!-- <i class="icon_heart"></i> in
-              <a href="#">CakeCounter</a>-->
+            </p>
+          </div>
+          <div class="col-sm-12 d-md-none">
+            <p>
+              <br/>{{ $t('footer.madeBy') }}
             </p>
           </div>
         </div>
@@ -89,7 +94,9 @@ import TeamSolutions from "./TeamSolutions";
 
 export default {
   name: "Footer",
-
+  data: () => ({
+    isSm: document.body.clientWidth >= 768
+  }),
   components: {
     TeamSolutions
   }
@@ -143,16 +150,17 @@ footer {
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9886', endColorstr='#ffffff', GradientType=0 );
 }
-
-.new_footer_area {
-  /* background: #fbfbfd; */
-}
-
 .new_footer_top {
   padding: 120px 0px 270px;
   position: relative;
   overflow-x: hidden;
 }
+@media screen and (max-width: 768px) {
+  .new_footer_top {
+    padding: 60px 0px 25px;
+  }
+}
+
 .new_footer_area .footer_bottom {
   padding-top: 5px;
   padding-bottom: 50px;
@@ -266,6 +274,7 @@ button:focus {
   margin-left: 4px;
 }
 .new_footer_top .f-title {
+  margin-top: 30px;
   margin-bottom: 30px;
   color: #263b5e;
 }

@@ -28,7 +28,7 @@
           </div>
           <div v-if="alert.message" :class="`alert ${alert.type}`">{{alert.message}}</div>
 
-          <div class="form-group">
+          <div class="form-group ">
             <button class="btn btn-primary button button1" :disabled="status.loggingIn">Login</button>
             <img v-show="status.loggingIn" src />
             <router-link to="/register" class="btn btn-link button button2">Register</router-link>

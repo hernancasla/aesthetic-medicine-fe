@@ -1,6 +1,6 @@
 <template >
-  <flux-parallax src="/images/paris2.jpg" style="height:400px">
-    <div class="row justify-content-md-center" id="intro">
+  <flux-parallax src="/images/paris1.jpg" id="parallax-intro">
+    <div class="row" id="intro">
       <div class="col-lg-5 col-md-6 col-12">
         <h1>
           BELLEZA REAL
@@ -48,6 +48,17 @@ export default {
 };
 </script>
 <style scoped>
+@media screen and (min-width: 769px) {
+  div#parallax-intro {
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  div#parallax-intro {
+    height: 45rem;
+  }
+}
+
 div#intro {
   padding: 1.2em;
   font-size: 14px;
