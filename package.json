@@ -21,7 +21,7 @@
     "bootstrap-vue": "^2.0.4",
     "core-js": "^2.6.5",
     "dotenv-webpack": "^1.7.0",
-    "moment-timezone": "^0.5.27",
+    "moment-timezone": "^0.5.35",
     "vee-validate": "^2.2.8",
     "vue": "^2.6.10",
     "vue-flux": "^6.0.1",
